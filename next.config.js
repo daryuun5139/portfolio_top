@@ -15,25 +15,4 @@ module.exports = withBundleAnalyzer({
       },
     ];
   },
-  images: {
-    domains: ["images.microcms-assets.io"],
-  },
-  // i18n: {
-  //   locales: ["en", "ja"],
-  //   defaultLocale: "ja",
-  // },
 });
-
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   images: {
-//     domains: ["images.microcms-assets.io"],
-//   },
-//   i18n: {
-//     locales: ["en", "ja"],
-//     defaultLocale: "ja",
-//   },
-//   pageExtensions: ["ts", "tsx"],
-// };
-
-// module.exports = nextConfig;
