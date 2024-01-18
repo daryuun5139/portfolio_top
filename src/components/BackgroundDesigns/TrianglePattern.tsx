@@ -30,6 +30,12 @@ const TrianglePattern = ({ designName }: Props) => {
       //   setSt3(colors.st3[Math.floor(Math.random() * colors.st3.length)]);
       //   setSt4(colors.st4[Math.floor(Math.random() * colors.st4.length)]);
       // });
+      setInterval(() => {
+        setSt1(colors.st1[Math.floor(Math.random() * colors.st1.length)]);
+        setSt2(colors.st2[Math.floor(Math.random() * colors.st2.length)]);
+        setSt3(colors.st3[Math.floor(Math.random() * colors.st3.length)]);
+        setSt4(colors.st4[Math.floor(Math.random() * colors.st4.length)]);
+      }, 5000);
     }
   });
   return (
@@ -39,6 +45,7 @@ const TrianglePattern = ({ designName }: Props) => {
         xmlns="http://www.w3.org/2000/svg"
         // viewBox="0 0 1928.5 1050"
         className="h-full w-full duration-1000"
+        preserveAspectRatio="none"
       >
         <polygon
           points="1928.5 77.53 1928.5 77.5 1928.48 77.51 1928.5 77.53"

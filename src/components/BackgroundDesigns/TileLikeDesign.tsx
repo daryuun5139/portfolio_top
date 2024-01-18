@@ -1,52 +1,96 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
-  // width: number;
-  // height: number;
   designName: string;
 };
 
 const TileLikeDesign = ({ designName }: Props) => {
-  // 背景デザイン変更
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
+
   useEffect(() => {
-    const sectionWindow = document.getElementById("about");
-    const sectionWindowDesign = document.getElementById(designName);
-    const colors = [
-      ["#bec675", "#3e3683"],
-      ["#1e2ccf", "#f7d730"],
-      ["#204b33", "#ddb8cd"],
-      ["#161616", "#835c11"],
-      ["#78426f", "#8cbe95"],
-      ["#702a3a", "#95d5c7"],
-    ];
-
-    if (sectionWindow && sectionWindowDesign) {
-      // sectionWindow.addEventListener("click", () => {
-      //   const selectedColor = colors[Math.floor(Math.random() * colors.length)];
-      //   sectionWindow.style.background = selectedColor[1];
-      //   sectionWindowDesign.style.fill = selectedColor[0];
-      // });
-
-      sectionWindow.addEventListener("DOMContentLoaded", () => {
-        // 3秒ごとに実行
-        setInterval(() => {
-          const selectedColor = colors[Math.floor(Math.random() * colors.length)];
-          sectionWindow.style.background = selectedColor[1];
-          sectionWindowDesign.style.fill = selectedColor[0];
-        }, 3000);
-      });
-    }
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
   });
+
+  // rectをランダムで動かす
+  // useEffect(() => {
+  //   const width: number = window.innerWidth;
+  //   const height: number = window.innerHeight;
+  //   const sectionWindowDesignElems = document
+  //     .getElementById(designName)!
+  //     .getElementsByTagName("rect");
+  //   [...sectionWindowDesignElems].forEach((v) => {
+  //     const vx: number = v.x.animVal.value;
+  //     const vy: number = v.y.animVal.value;
+  //     const wx: number = width - vx;
+  //     const hy: number = height - vy;
+  //     const keyframe = [
+  //       { transform: `translate(${vx}, ${vy})` },
+  //       { transform: `translate(${wx}px, ${hy}px)` },
+  //       { transform: `translate(-${vx}px, 0px)` },
+  //       { transform: `translate(${wx}px, 0px)` },
+  //       { transform: `translate(0px, -${vy}px)` },
+  //       { transform: `translate(0px, ${hy}px)` },
+  //       { transform: `translate(-${vx}px, -${vy}px)` },
+  //     ];
+
+  //     // const randomNum: number = Math.floor(Math.random() * keyframe.length - 1) + 1;
+
+  //     // v.animate([keyframe[0], keyframe[randomNum]], {
+  //     //   duration: 20000,
+  //     //   iterations: Infinity,
+  //     //   direction: "alternate",
+  //     // });
+  //     v.animate([keyframe[6], keyframe[5]], {
+  //       duration: 20000,
+  //       iterations: Infinity,
+  //       direction: "alternate",
+  //     });
+  //   });
+  // });
+
+  // 背景色をアニメーションで変更
+  // useEffect(() => {
+  //   const sectionWindow = document.getElementById("about");
+  //   const sectionWindowDesign = document.getElementById(designName);
+
+  //   if (sectionWindow && sectionWindowDesign) {
+  //     sectionWindow.animate(
+  //       [
+  //         { backgroundColor: "#D81159" },
+  //         { backgroundColor: "#FFCC40" },
+  //         { backgroundColor: "#032B43" },
+  //         { backgroundColor: "1A535C" },
+  //       ],
+  //       {
+  //         duration: 10000,
+  //         iterations: Infinity,
+  //         direction: "alternate",
+  //       }
+  //     );
+
+  //     sectionWindowDesign.animate(
+  //       [{ fill: "#FF6B35" }, { fill: "#218380" }, { fill: "#F1FAEE" }, { fill: "#FFCC40" }],
+  //       {
+  //         duration: 10000,
+  //         iterations: Infinity,
+  //         direction: "alternate",
+  //       }
+  //     );
+  //   }
+  // }, []);
 
   return (
     <>
       <svg
-        // viewBox={`13 0 ${windowSize[1]} ${windowSize[0]}`}
+        // viewBox={`0 0 ${width} ${height}`}
         id={designName}
         className="absolute left-0 top-0 h-full w-full duration-1000"
         xmlns="http://www.w3.org/2000/svg"
+        // preserveAspectRatio="none"
       >
         <g id="layer1" transform="translate(635, 35) scale(3)">
           <g id="g8">

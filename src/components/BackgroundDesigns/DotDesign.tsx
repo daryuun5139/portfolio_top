@@ -1,12 +1,21 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
   designName: string;
 };
 
 const DotDesign = ({ designName }: Props) => {
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  });
+
+  // ellipseをランダムで動かす
   useEffect(() => {
     const width: number = window.innerWidth;
     const height: number = window.innerHeight;
@@ -87,8 +96,10 @@ const DotDesign = ({ designName }: Props) => {
     <>
       <svg
         id={designName}
-        className="h-full w-full duration-1000"
+        className="absolute left-0 top-0 h-full w-full duration-1000"
         xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        // viewBox={`0 0 ${width} ${height}`}
       >
         <g id="Layer_1">
           <title>Layer 1</title>
