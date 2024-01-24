@@ -87,7 +87,7 @@ const Section3 = async () => {
                   alt="tech-blog.png"
                   width="0"
                   height="0"
-                  className="h-[350px] w-[300px]"
+                  className="h-[300px] w-[300px] sm:h-[350px]"
                 />
               </div>
             </div>
