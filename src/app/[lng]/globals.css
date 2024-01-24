@@ -60,3 +60,7 @@ body {
   justify-content: center;
   background-color: #ffffff;
 }
+
+section {
+  height: calc(var(--vh, 1vh) * 100);
+}
