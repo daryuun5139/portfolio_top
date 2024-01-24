@@ -25,7 +25,7 @@ const NavBar_Hidden = () => {
   const { lng } = useParams();
 
   return (
-    <div className="absolute left-10 sm:top-2 md:hidden">
+    <div className="absolute left-3 2xs:left-10 sm:top-2">
       {/* md (768px)以下でNavigationMenu出現 */}
       <DropdownMenu>
         <DropdownMenuTrigger>
