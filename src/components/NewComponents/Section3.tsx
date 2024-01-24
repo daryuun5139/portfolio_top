@@ -15,10 +15,7 @@ const Section3 = async () => {
 
   return (
     <>
-      <section
-        id="portfolio1"
-        className="relative h-screen w-full snap-start bg-blue-400 duration-1000"
-      >
+      <section id="portfolio1" className="relative w-full snap-start bg-blue-400 duration-1000">
         {/* レスポンシブ2xs〜md(portrait)------------------------------------------------------------------------- */}
         <div className="absolute top-[50px] flex h-full w-full 2xs:top-[60px] xs:top-[65px] sm:top-[80px] md:hidden landscape:hidden">
           <div className="mx-auto flex h-full flex-col justify-between">
