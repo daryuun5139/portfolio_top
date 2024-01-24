@@ -17,7 +17,7 @@ const Section3 = async () => {
     <>
       <section
         id="portfolio1"
-        className="relative h-screen w-full snap-start bg-blue-400 duration-1000"
+        className="h-[calc(var(--vh, 1vh) * 100)] relative h-screen w-full snap-start bg-blue-400 duration-1000"
       >
         {/* <DotDesign designName="dotDesign" /> */}
         <div className="absolute top-[50px] flex h-full w-full sm:top-[80px] md:top-[110px] xl:top-[150px]">
