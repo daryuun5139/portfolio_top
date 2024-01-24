@@ -9,7 +9,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      "3xs": { raw: "(min-height: 320px)" },
+      "3xs": { raw: "(min-height: 320px)" }, //https://tailwindcss.com/docs/screens
       "2xs": "370px",
       xs: "390px",
       sm: "640px",

@@ -183,10 +183,11 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProp
     return (
       <Button
         ref={ref}
+        id="CarouselPrevious"
         variant={variant}
         size={size}
         className={cn(
-          "absolute border-none bg-transparent",
+          "invisible absolute border-none bg-transparent",
           orientation === "horizontal"
             ? "left-12 top-1/2 -translate-y-1/2"
             : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -198,7 +199,7 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProp
       >
         {canScrollPrev ? (
           <>
-            <ArrowLeft className="h-4 w-4" />
+            <ArrowLeft className="invisible" />
           </>
         ) : (
           <></>
@@ -216,11 +217,12 @@ const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentProps<ty
 
     return (
       <Button
+        id="CarouselNext"
         ref={ref}
         variant={variant}
         size={size}
         className={cn(
-          "absolute border-none bg-transparent",
+          "invisible absolute border-none bg-transparent",
           orientation === "horizontal"
             ? "right-12 top-1/2 -translate-y-1/2"
             : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -232,7 +234,7 @@ const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentProps<ty
       >
         {canScrollNext ? (
           <>
-            <ArrowRight className="h-4 w-4" />
+            <ArrowRight className="invisible" />
           </>
         ) : (
           <></>
