@@ -64,3 +64,4 @@ body {
 section {
   height: calc(var(--vh, 1vh) * 100);
 }
+/* https://devsakaso.com/javascript-100vh-problem-on-mobile-screens/# */

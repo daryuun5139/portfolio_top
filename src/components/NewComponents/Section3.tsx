@@ -15,14 +15,16 @@ const Section3 = async () => {
 
   return (
     <>
-      <section id="portfolio1" className="relative w-full snap-start bg-blue-400 duration-1000">
+      <section
+        id="portfolio1"
+        className="relative h-screen w-full snap-start bg-blue-400 duration-1000"
+      >
         {/* <DotDesign designName="dotDesign" /> */}
         <div className="absolute top-[50px] flex h-full w-full sm:top-[80px] md:top-[110px] xl:top-[150px]">
           {/* 2xsサイズ以上の画面--------------------------------------- */}
-          <div className="mx-auto flex h-full flex-col justify-between md:hidden">
-            {/* <div className="flex flex-col"> */}
+          <div className="mx-auto flex h-full flex-col justify-between md:hidden landscape:bg-slate-600">
             {/* 2xsサイズ以上のタイトル部分--------------------------------------- */}
-            <h1 className="flex text-3xl xs:text-6xl sm:text-7xl">
+            <h1 className="flex pb-2 text-3xl xs:text-6xl sm:text-7xl">
               <span className="mx-auto flex cursor-default font-bold text-white ">portfolio1</span>
             </h1>
             {/* 2xsサイズ以上の概要部分&画像部分--------------------------------------- */}
@@ -37,7 +39,7 @@ const Section3 = async () => {
                   alt="tech-blog.png"
                   width="0"
                   height="0"
-                  className=" w-[250px]  xs:h-[400px] xs:w-[300px]"
+                  className=" w-[250px]  xs:h-[400px] xs:w-[300px] sm:h-[500px] sm:w-[350px]"
                 />
               </div>
             </div>
@@ -54,7 +56,6 @@ const Section3 = async () => {
                 </span>
               </Link>
             </div>
-            {/* </div> */}
           </div>
           {/* mdサイズ以上の画面--------------------------------------- */}
           <div className="mx-auto hidden flex-col justify-between md:flex md:w-[90%] lg:hidden">

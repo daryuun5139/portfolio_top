@@ -14,20 +14,23 @@ export default function Home() {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-    // ここからリサイズの対応
-    // let vw = window.innerWidth;
-    // window.addEventListener("resize", () => {
-    //   if (vw === window.innerWidth) {
-    //     // 画面の横幅にサイズ変動がないので処理を終える
-    //     return;
-    //   }
-    // });
+    // リサイズの対応
+    let vw = window.innerWidth;
+    window.addEventListener("resize", () => {
+      if (vw === window.innerWidth) {
+        return; // 画面の横幅にサイズ変動がないので処理を終える
+      }
+      // 画面の横幅のサイズ変動があった時のみ高さを再計算する
+      vw = window.innerWidth;
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    });
   });
 
   return (
     <div className="relative w-full">
       <Header />
-      <div className="h-[calc(var(--vh, 1vh) * 100)] h-screen w-full snap-y snap-mandatory overflow-hidden overflow-y-scroll">
+      <div className="h-screen w-full snap-y snap-mandatory overflow-hidden overflow-y-scroll">
         {/* セクション１ Title---------------------------------------------------------------------- */}
         <Section1 />
         {/* セクション２ About---------------------------------------------------------------------- */}
