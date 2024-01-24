@@ -1,17 +1,12 @@
-// "use client";
-
 import Header from "@/components/NewComponents/Header";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import Section1 from "@/components/NewComponents/Section1";
 import Section2 from "@/components/NewComponents/Section2";
 import Section3 from "@/components/NewComponents/Section3";
 import Section4 from "@/components/NewComponents/Section4";
 import Section5 from "@/components/NewComponents/Section5";
 
-export default function Home() {
-  // const { lng } = useParams();
-
+export default async function Home() {
   return (
     <div className="relative w-full">
       <Header />

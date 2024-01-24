@@ -9,11 +9,11 @@ type Props = {};
 
 export default async function Header() {
   return (
-    <header className="sticky top-6 z-10 flex h-0 w-full justify-center">
+    <header className="sticky top-3 z-10 flex h-0 w-full justify-center sm:top-6">
       {/* ナビゲーションバー */}
       <NavBar_Hidden />
       <NavBar_Normal />
-      <div className="absolute right-0 top-2 mr-10 flex gap-2">
+      <div className="absolute right-0 mr-10 flex gap-2 sm:top-2">
         {/* 日本語、英語切り替え */}
         <Ja_EnButton />
       </div>
