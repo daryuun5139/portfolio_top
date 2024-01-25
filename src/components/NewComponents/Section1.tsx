@@ -6,11 +6,11 @@ const Section1 = (props: Props) => {
   return (
     <>
       <section
-        id="top"
+        id="section1"
         className="relative w-full snap-start bg-[#4169e1] fill-[#218380] duration-1000"
       >
         {/* レスポンシブスマホ(portrait, landscape)------------------------------------------------------------------------- */}
-        <div className="absolute top-1/3 flex w-full flex-col landscape:top-[22%]">
+        <div className="absolute top-1/3 flex w-full flex-col md:hidden landscape:top-[22%]">
           {/* <DotDesign designName="dotDesign" /> */}
           <h1 className="flex flex-col">
             <span className="mx-auto flex cursor-default text-5xl font-bold leading-[70px] text-white sm:text-6xl sm:leading-[100px]">
@@ -21,14 +21,14 @@ const Section1 = (props: Props) => {
             </span>
           </h1>
         </div>
-        {/* レスポンシブmd〜------------------------------------------------------------------------- */}
-        <div className="absolute top-1/3 hidden w-full flex-col md:flex landscape:hidden">
+        {/* レスポンシブPC(md〜)------------------------------------------------------------------------- */}
+        <div className="relative hidden h-full w-full md:flex ">
           {/* <DotDesign designName="dotDesign" /> */}
-          <h1 className="flex flex-col md:left-[80px] md:top-[200px] md:text-9xl md:leading-[150px]">
-            <span className="mx-auto flex cursor-default text-5xl font-bold leading-[70px] text-white sm:text-6xl sm:leading-[100px] md:m-0">
+          <h1 className="absolute left-[150px] top-[130px] flex flex-col">
+            <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px] text-white">
               Daryun's
             </span>
-            <span className="mx-auto flex cursor-default text-5xl font-bold leading-[70px] text-white sm:text-6xl sm:leading-[100px] md:ml-10">
+            <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px] text-white">
               Tech Blog
             </span>
           </h1>

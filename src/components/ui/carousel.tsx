@@ -183,7 +183,6 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProp
     return (
       <Button
         ref={ref}
-        id="CarouselPrevious"
         variant={variant}
         size={size}
         className={cn(
@@ -217,7 +216,6 @@ const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentProps<ty
 
     return (
       <Button
-        id="CarouselNext"
         ref={ref}
         variant={variant}
         size={size}

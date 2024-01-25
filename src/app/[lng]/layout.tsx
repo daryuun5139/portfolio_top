@@ -30,7 +30,7 @@ export default function RootLayout({
   params: { lng: string };
 }) {
   return (
-    <html lang={lng} dir={dir(lng)} suppressHydrationWarning className="scroll-auto">
+    <html lang={lng} dir={dir(lng)} suppressHydrationWarning className="overscroll-x-none">
       <head>
         <link rel="icon" href="data:," sizes="any" />
       </head>

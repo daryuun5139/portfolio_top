@@ -17,12 +17,12 @@ const NavBar_Normal = () => {
   return (
     <>
       {/* md (768px)以上でNavigationMenu出現 */}
-      <NavigationMenu className="relative hidden w-fit rounded-full bg-black/70 px-8 py-7 md:flex landscape:hidden">
+      <NavigationMenu className="relative hidden w-fit rounded-full bg-black/70 px-8 py-7 md:flex">
         <NavigationMenuList>
           {/* Topタグ----------------------------------------------------------- */}
           <NavigationMenuItem>
             <NavigationMenuLink
-              href="#top"
+              href="#section1"
               className="cursor-pointer font-semibold text-white duration-500 hover:underline"
             >
               {lng === "ja" ? (
@@ -118,16 +118,16 @@ const NavBar_Normal = () => {
               </NavigationMenuContent>
             )}
           </NavigationMenuItem>
-          {/* Blogタグ----------------------------------------------------------- */}
+          {/* galleryタグ----------------------------------------------------------- */}
           <NavigationMenuItem>
             <NavigationMenuLink
-              href="#blog"
+              href="#gallery"
               className="cursor-pointer font-semibold text-white duration-500 hover:underline"
             >
               {lng === "ja" ? (
-                <span className="text-xl">ブログ</span>
+                <span className="text-xl">ギャラリー</span>
               ) : (
-                <span className="text-2xl">Blog</span>
+                <span className="text-2xl">gallery</span>
               )}
             </NavigationMenuLink>
             <NavigationMenuContent></NavigationMenuContent>
