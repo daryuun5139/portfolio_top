@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { dir } from "i18next";
 import { languages } from "../../i18n/setting";
+import { Providers } from "@/components/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +35,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="data:," sizes="any" />
       </head>
-      <body className={cn(inter.className)}>{children}</body>
+      <body className={cn(inter.className)}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

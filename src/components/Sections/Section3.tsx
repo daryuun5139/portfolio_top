@@ -1,17 +1,14 @@
-"use client";
-
 import Image from "next/image";
 import techBlogImage from "../../../public/site_thumbnail/tech-blog.png";
 import Link from "next/link";
-import { useTranslation } from "../../i18n/index";
-import { Trans } from "react-i18next";
-import { useParams } from "next/navigation";
+import Overview from "../Others/Overview";
 
-type Props = {};
+type Props = {
+  lng: string;
+};
 
-const Section3 = async () => {
-  const { lng } = useParams();
-  const { t } = await useTranslation(lng.toString(), "section3");
+const Section3 = ({ lng }: Props) => {
+  const sectionName = "section3";
 
   return (
     <>
@@ -26,7 +23,7 @@ const Section3 = async () => {
             {/* 概要&画像部分-------------------- */}
             <div className="mx-auto flex h-[70%] flex-col items-center overflow-y-scroll pt-2">
               <p className="mx-auto flex cursor-default text-center text-sm leading-6 tracking-[3px] text-white xs:leading-8 sm:text-base">
-                <Trans t={t}>{"text1"}</Trans>
+                <Overview lng={lng} ns={sectionName} />
               </p>
               <div className="flex pt-2 xs:pt-8 sm:pt-4">
                 <Image
@@ -55,7 +52,7 @@ const Section3 = async () => {
         </div>
         {/* レスポンシブ2xs〜md(portrait)終了===================================================================== */}
         {/* レスポンシブ2xs〜md(landscape)======================================================================== */}
-        <div className="absolute top-3 flex h-full w-full md:hidden portrait:hidden">
+        <div className="absolute top-3 flex h-full w-full md:hidden big-phone:flex portrait:hidden">
           <div className="mx-auto flex h-full flex-col justify-between">
             {/* タイトル部分------------------------*/}
             <h1 className="flex text-4xl md:pt-3 md:text-5xl">
@@ -63,9 +60,9 @@ const Section3 = async () => {
             </h1>
             {/* 概要&Link部分-------------------- */}
             <div className="mx-auto flex h-[80%] w-[95%] gap-3 overflow-y-scroll 3xs:overflow-hidden md:h-[75%] md:w-[85%]">
-              <div className="flex flex-col md:w-[65%]">
+              <div className="flex w-[60%] flex-col">
                 <p className="flex cursor-default text-sm leading-6 tracking-[3px] text-white xs:leading-8 md:text-lg">
-                  <Trans t={t}>{"text1"}</Trans>
+                  <Overview lng={lng} ns={sectionName} />
                 </p>
                 <div className="flex w-full justify-evenly pt-1 md:pt-5">
                   <Link href="https://tech-blog-pink.vercel.app/ja" className="flex">
@@ -81,7 +78,7 @@ const Section3 = async () => {
                 </div>
               </div>
               {/* 画像部分-------------------------- */}
-              <div className="flex">
+              <div className="flex w-[35%]">
                 <Image
                   src={techBlogImage}
                   alt="tech-blog.png"
@@ -95,7 +92,7 @@ const Section3 = async () => {
         </div>
         {/* レスポンシブ2xs〜md(landscape)終了===================================================================== */}
         {/* mdサイズ以上の画面===================================================================================== */}
-        <div className="absolute top-[150px] hidden h-full w-full flex-col justify-between md:flex lg:hidden">
+        <div className="absolute top-[150px] hidden h-full w-full flex-col justify-between md:flex lg:hidden big-phone:hidden">
           <div className="mx-auto flex w-[90%] flex-col">
             {/* mdサイズ以上の上画面------------------------------ */}
             <h1 className="flex md:text-8xl ">
@@ -105,7 +102,7 @@ const Section3 = async () => {
             <div className="flex gap-5 md:flex-row md:pt-8">
               <div className="mx-auto flex flex-col">
                 <p className="flex cursor-default leading-10 tracking-[3px] text-white md:text-start ">
-                  <Trans t={t}>{"text1"}</Trans>
+                  <Overview lng={lng} ns={sectionName} />
                 </p>
                 <div className="flex w-full md:pt-5">
                   <Link href="https://tech-blog-pink.vercel.app/ja" className="mx-auto md:mr-3 ">
@@ -120,7 +117,7 @@ const Section3 = async () => {
                 </div>
               </div>
               {/* mdサイズ以上の下右画面--------------------------- */}
-              <div className="fle-col mx-auto md:pt-0">
+              <div className="mx-auto flex md:pt-0">
                 <Image
                   src={techBlogImage}
                   alt="tech-blog.png"
@@ -134,9 +131,9 @@ const Section3 = async () => {
         </div>
         {/* lgサイズ以上の画面===================================================================================== */}
         <div className="absolute top-[150px] hidden h-full w-full justify-center lg:flex lg:gap-5 xl:gap-8">
-          <div className="mx-auto flex w-[95%] justify-evenly">
+          <div className="mx-auto flex w-[85%] justify-between 2xl:w-[70%]">
             {/* lgサイズ以上の画面左半分------------------------------- */}
-            <div className="flex flex-col">
+            <div className="flex w-[60%] flex-col">
               <h1 className="flex lg:text-8xl xl:text-9xl">
                 <span className="mx-auto flex cursor-default font-bold text-white lg:m-0">
                   portfolio1
@@ -144,20 +141,20 @@ const Section3 = async () => {
               </h1>
               <div className="flex flex-col lg:pt-12 xl:pt-16">
                 <p className="mx-auto flex cursor-default leading-10 tracking-[3px] text-white lg:text-start xl:ml-[70px]">
-                  <Trans t={t}>{"text1"}</Trans>
+                  <Overview lng={lng} ns={sectionName} />
                 </p>
-                <div className="flex w-full lg:pt-5 xl:pt-10">
-                  <Link href="https://tech-blog-pink.vercel.app/ja" className="mx-auto lg:mr-5">
+                <div className="flex w-full justify-evenly lg:pt-5 xl:pt-10">
+                  <Link href="https://tech-blog-pink.vercel.app/ja" className="flex lg:mr-5">
                     <span className="text-3xl font-semibold text-white underline">visit site⇛</span>
                   </Link>
-                  <Link href="https://github.com/daryuun5139/tech-blog" className="mx-auto lg:mr-5">
-                    <span className="text-3xl font-semibold text-white underline">github</span>
+                  <Link href="https://github.com/daryuun5139/tech-blog" className="flex lg:mr-5">
+                    <span className="text-3xl font-semibold text-white underline">github⇛</span>
                   </Link>
                 </div>
               </div>
             </div>
             {/* lgサイズ以上の画面右半分----------------------------- */}
-            <div className="hidden pt-4 lg:flex">
+            <div className="hidden w-[40%] pt-4 lg:flex">
               <Image
                 src={techBlogImage}
                 alt="tech-blog.png"

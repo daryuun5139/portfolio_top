@@ -17,7 +17,7 @@ const NavBar_Normal = () => {
   return (
     <>
       {/* md (768px)以上でNavigationMenu出現 */}
-      <NavigationMenu className="relative hidden w-fit rounded-full bg-black/70 px-8 py-7 md:flex">
+      <NavigationMenu className="relative hidden w-fit rounded-full bg-black/70 px-8 py-7 md:flex big-phone:hidden">
         <NavigationMenuList>
           {/* Topタグ----------------------------------------------------------- */}
           <NavigationMenuItem>

@@ -7,10 +7,10 @@ const Section1 = (props: Props) => {
     <>
       <section
         id="section1"
-        className="relative w-full snap-start bg-[#4169e1] fill-[#218380] duration-1000"
+        className="relative flex w-full snap-start justify-center bg-[#4169e1] fill-[#218380] duration-1000"
       >
         {/* レスポンシブスマホ(portrait, landscape)------------------------------------------------------------------------- */}
-        <div className="absolute top-1/3 flex w-full flex-col md:hidden landscape:top-[22%]">
+        <div className="absolute top-1/3 flex w-full flex-col md:hidden big-phone:flex landscape:top-[22%]">
           {/* <DotDesign designName="dotDesign" /> */}
           <h1 className="flex flex-col">
             <span className="mx-auto flex cursor-default text-5xl font-bold leading-[70px] text-white sm:text-6xl sm:leading-[100px]">
@@ -22,7 +22,7 @@ const Section1 = (props: Props) => {
           </h1>
         </div>
         {/* レスポンシブPC(md〜)------------------------------------------------------------------------- */}
-        <div className="relative hidden h-full w-full md:flex ">
+        <div className="relative hidden h-full w-full md:flex big-phone:hidden">
           {/* <DotDesign designName="dotDesign" /> */}
           <h1 className="absolute left-[150px] top-[130px] flex flex-col">
             <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px] text-white">

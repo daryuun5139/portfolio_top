@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Carousel,
   CarouselContent,
@@ -17,28 +15,31 @@ const Section2 = (props: Props) => {
         <Carousel className="h-full w-full">
           <CarouselContent className="h-full w-full">
             {/* id="about_inner" ======================================================================== */}
-            <CarouselItem className="flex h-screen w-full bg-red-400 p-0">
+            <CarouselItem className="flex h-screen w-full justify-center bg-red-400 p-0">
               {/* レスポンシブスマホ(portrait, landscape)----------------------------*/}
-              <section id="about_inner" className="relative flex w-full md:hidden">
+              <section id="about_inner" className="relative flex w-full md:hidden big-phone:flex">
                 <h1 className="absolute top-1/3 flex w-full flex-col landscape:top-[22%]">
-                  <span className="mx-auto flex cursor-default text-7xl font-bold leading-[70px] text-white sm:text-6xl sm:leading-[100px]">
+                  <span className="mx-auto flex cursor-default text-6xl font-bold leading-[70px] text-white sm:text-6xl sm:leading-[100px]">
                     about
                   </span>
-                  <span className="mx-auto flex cursor-default text-7xl font-bold leading-[70px] text-white sm:text-6xl sm:leading-[100px]">
+                  <span className="mx-auto flex cursor-default text-6xl font-bold leading-[70px] text-white sm:text-6xl sm:leading-[100px]">
                     me
                   </span>
                 </h1>
                 <div className="absolute top-[80%] flex w-full justify-end">
                   <CarouselNext id="CarouselNext_about" />
                   <label htmlFor="CarouselNext_about">
-                    <span className="mr-3 flex text-5xl font-semibold text-white underline hover:cursor-pointer hover:opacity-75">
+                    <span className="mr-3 flex text-4xl font-semibold text-white underline hover:cursor-pointer hover:opacity-75">
                       more⇒
                     </span>
                   </label>
                 </div>
               </section>
               {/* レスポンシブPC(md〜)------------------------------------------------ */}
-              <section id="about_inner" className="relative hidden h-full w-full md:flex">
+              <section
+                id="about_inner"
+                className="relative hidden h-full w-full md:flex 2xl:w-[75%] big-phone:hidden"
+              >
                 <h1 className="absolute left-[150px] top-[130px] flex flex-col items-end">
                   <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px] text-white">
                     about
@@ -60,13 +61,16 @@ const Section2 = (props: Props) => {
             {/* id="profile" ======================================================================== */}
             <CarouselItem className="flex h-screen w-full bg-pink-400 p-0">
               {/* レスポンシブスマホ(portrait, landscape)---------------------------------------*/}
-              <section id="profile" className="relative flex w-full justify-center md:hidden">
-                <h1 className="absolute top-[20%] flex w-full landscape:top-[22%]">
-                  <span className="mx-auto flex cursor-default text-7xl font-bold text-white">
+              <section
+                id="profile"
+                className="relative flex w-full justify-center md:hidden big-phone:flex"
+              >
+                <h1 className="absolute top-[18%] flex w-full landscape:top-[5%]">
+                  <span className="mx-auto flex cursor-default text-6xl font-bold text-white">
                     profile
                   </span>
                 </h1>
-                <div className="absolute top-[40%] flex w-[90%]">
+                <div className="absolute top-[38%] flex w-[90%]">
                   <p className="flex cursor-default text-center leading-6 tracking-[3px] text-white">
                     当ブログにご訪問いただきありがとうございます。このブログは私が学んだこと、まとめたいことを記事にしているブログです。
                   </p>
@@ -74,7 +78,7 @@ const Section2 = (props: Props) => {
                 <div className="absolute top-[80%] flex w-full justify-start">
                   <CarouselPrevious id="CarouselPrevious_about" />
                   <label htmlFor="CarouselPrevious_about">
-                    <span className="ml-3 flex text-5xl font-semibold text-white underline hover:cursor-pointer hover:opacity-75">
+                    <span className="ml-3 flex text-4xl font-semibold text-white underline hover:cursor-pointer hover:opacity-75">
                       ⇐back
                     </span>
                   </label>
@@ -83,7 +87,7 @@ const Section2 = (props: Props) => {
               {/* レスポンシブPC(md〜)------------------------------------------------ */}
               <section
                 id="profile"
-                className="relative hidden h-full w-full items-center justify-center md:flex"
+                className="relative hidden h-full w-full items-center justify-center md:flex big-phone:hidden"
               >
                 <div className="absolute top-[18%] flex flex-col">
                   <h1 className="flex">

@@ -1,32 +1,16 @@
-// "use client";
+import Header from "@/components/Header/Header";
+import Section1 from "@/components/Sections/Section1";
+import Section2 from "@/components/Sections/Section2";
+import Section3 from "@/components/Sections/Section3";
+import Section4 from "@/components/Sections/Section4";
+import Section5 from "@/components/Sections/Section5";
+import Section6 from "@/components/Sections/Section6";
 
-import Header from "@/components/NewComponents/Header";
-import Section1 from "@/components/NewComponents/Section1";
-import Section2 from "@/components/NewComponents/Section2";
-import Section3 from "@/components/NewComponents/Section3";
-import Section4 from "@/components/NewComponents/Section4";
-import Section5 from "@/components/NewComponents/Section5";
-import Section6 from "@/components/NewComponents/Section6";
-import { useEffect } from "react";
+type ParamType = {
+  params: { lng: string };
+};
 
-export default function Home() {
-  // useEffect(() => {
-  //   const vh = window.innerHeight * 0.01;
-  //   document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-  //   // リサイズの対応
-  //   let vw = window.innerWidth;
-  //   window.addEventListener("resize", () => {
-  //     if (vw === window.innerWidth) {
-  //       return; // 画面の横幅にサイズ変動がないので処理を終える
-  //     }
-  //     // 画面の横幅のサイズ変動があった時のみ高さを再計算する
-  //     vw = window.innerWidth;
-  //     const vh = window.innerHeight * 0.01;
-  //     document.documentElement.style.setProperty("--vh", `${vh}px`);
-  //   });
-  // });
-
+export default function Home({ params: { lng } }: ParamType) {
   return (
     <div className="relative w-full">
       <Header />
@@ -36,11 +20,11 @@ export default function Home() {
         {/* セクション２ About---------------------------------------------------------------------- */}
         <Section2 />
         {/* セクション３ portfolio1----------------------------------------------------------------- */}
-        <Section3 />
+        <Section3 lng={lng} />
         {/* セクション４ portfolio2----------------------------------------------------------------- */}
-        <Section4 />
+        <Section4 lng={lng} />
         {/* セクション５ portfolio3----------------------------------------------------------------- */}
-        <Section5 />
+        <Section5 lng={lng} />
         {/* セクション６ gallery ---------------------------------------------------------------------- */}
         <Section6 />
       </div>
