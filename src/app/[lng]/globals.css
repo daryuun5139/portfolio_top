@@ -62,6 +62,61 @@ body {
 }
 
 section {
+  /* https://devsakaso.com/javascript-100vh-problem-on-mobile-screens/# */
   height: calc(var(--vh, 1vh) * 100);
 }
-/* https://devsakaso.com/javascript-100vh-problem-on-mobile-screens/# */
+
+h1 {
+  color: #003566;
+}
+
+/* Background Gradient------------------------------------------ */
+#section1 {
+  background: linear-gradient(234deg, #fa709a, #fee140);
+  background-size: 300% 300%;
+  animation: GradientBackground 8s ease 1s infinite;
+}
+
+#about_inner {
+  background: linear-gradient(234deg, #a8edea, #fed6e3);
+  background-size: 300% 300%;
+  animation: GradientBackground 8s ease 1s infinite;
+}
+
+#profile {
+  background: linear-gradient(234deg, #ddd6f3, #faaca8);
+  background-size: 300% 300%;
+  animation: GradientBackground 8s ease 1s infinite;
+}
+
+#portfolio1 {
+  background: linear-gradient(234deg, #5ee7df, #b490ca);
+  background-size: 300% 300%;
+  animation: GradientBackground 8s ease 1s infinite;
+}
+
+#portfolio2 {
+  background: linear-gradient(234deg, #fddb92, #d1fdff);
+  background-size: 300% 300%;
+  animation: GradientBackground 8s ease 1s infinite;
+}
+
+#portfolio3 {
+  background: linear-gradient(234deg, #e0c3fc, #8ec5fc);
+  background-size: 300% 300%;
+  animation: GradientBackground 8s ease 1s infinite;
+}
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

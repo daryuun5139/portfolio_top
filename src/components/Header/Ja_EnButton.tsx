@@ -8,7 +8,6 @@ type Props = {};
 const Ja_EnButton = () => {
   const path = usePathname().slice(3);
   const { lng } = useParams();
-  // console.log(path);
 
   const LangSwitch = () => {
     // 日本語の場合
@@ -19,14 +18,14 @@ const Ja_EnButton = () => {
             <span>日本語</span>
             <span> | </span>
             <Link href={`/en/${path}`} className=" duration-500 hover:underline">
-              <span className="text-slate-400">英語</span>
+              <span>英語</span>
             </Link>
           </div>
           <div className="flex w-fit flex-row gap-1 rounded-full bg-black/70 px-5 py-2 text-sm text-white lg:hidden">
             <span>日</span>
             <span>|</span>
             <Link href={`/en/${path}`} className="duration-500 hover:underline">
-              <span className="text-slate-400">英</span>
+              <span>英</span>
             </Link>
           </div>
         </>
@@ -37,14 +36,14 @@ const Ja_EnButton = () => {
         <>
           <div className="hidden w-fit flex-row gap-2 rounded-full bg-black/70 px-5 py-2 text-sm text-white lg:block">
             <Link href={`/ja/${path}`} className="duration-500 hover:underline">
-              <span className="text-slate-400">Japanese</span>
+              <span>Japanese</span>
             </Link>
             <span> | </span>
             <span>English</span>
           </div>
           <div className="flex w-fit flex-row gap-1 rounded-full bg-black/70 px-5 py-2 text-sm text-white lg:hidden">
             <Link href={`/ja/${path}`} className="duration-500 hover:underline">
-              <span className="text-slate-400">Ja</span>
+              <span>Ja</span>
             </Link>
             <span>|</span>
             <span>En</span>

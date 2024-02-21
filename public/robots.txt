@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://portfolio-top-ebon.vercel.app/ja
+
+# Sitemaps
+Sitemap: https://portfolio-top-ebon.vercel.app/ja/sitemap.xml

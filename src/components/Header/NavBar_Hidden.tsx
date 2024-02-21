@@ -18,7 +18,7 @@ const NavBar_Hidden = () => {
     <div className="absolute left-3 2xs:left-10 sm:top-2 md:hidden big-phone:flex">
       {/* md (768px)以下でNavigationMenu出現 */}
       <DropdownMenu>
-        <DropdownMenuTrigger>
+        <DropdownMenuTrigger aria-label="menu_button">
           <AlignJustify size={40} strokeWidth={3} />
         </DropdownMenuTrigger>
         <DropdownMenuContent className="bg-black/70n ml-5 w-[160px]">

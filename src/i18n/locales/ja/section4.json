@@ -1,3 +1,4 @@
 {
-  "text1": "illustrator等で作成したSVGデータを様々な色合いで再配色するサイトです。<br>Next.jsで作成しています。<br>illustratorで作成したSVGデータの異なる配色バージョンをさっと確認したく作成しました。"
+  "text1": "illustrator等で作成したSVGデータを様々な色合いで再配色するサイトです。<br>Next.jsで作成しています。<br>illustratorで作成したSVGデータの異なる配色バージョンをさっと確認したく作成しました。",
+  "techUsed": "使用技術: Next.js, recoil, tailwind, shadcn, typescript, etc"
 }

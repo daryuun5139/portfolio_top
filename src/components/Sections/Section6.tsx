@@ -23,18 +23,18 @@ const Section6 = (props: Props) => {
         <Carousel className="h-full w-full">
           <CarouselContent className="h-full w-full">
             {/* id="gallery_title" ======================================================================== */}
-            <CarouselItem className="flex h-screen w-full bg-purple-600 p-0">
+            <CarouselItem className="flex h-screen w-full p-0">
               {/* レスポンシブスマホ(portrait, landscape)---------------------------------------*/}
               <section id="gallery_title" className="relative flex w-full">
                 <h1 className="absolute top-1/3 flex w-full flex-col landscape:top-[22%]">
-                  <span className="mx-auto flex cursor-default text-6xl font-bold leading-[70px] text-white sm:text-6xl sm:leading-[100px]">
+                  <span className="mx-auto flex cursor-default text-6xl font-bold leading-[70px] sm:text-6xl sm:leading-[100px]">
                     gallery
                   </span>
                 </h1>
                 <div className="absolute top-[80%] flex w-full justify-end">
                   <CarouselNext id="CarouselNext_gallery" />
                   <label htmlFor="CarouselNext_gallery">
-                    <span className="mr-3 flex text-4xl font-semibold text-white underline hover:cursor-pointer hover:opacity-75">
+                    <span className="mr-3 flex text-4xl font-semibold underline hover:cursor-pointer hover:opacity-75">
                       more⇒
                     </span>
                   </label>
@@ -42,13 +42,11 @@ const Section6 = (props: Props) => {
               </section>
             </CarouselItem>
             {/* id="gallery_contents" ======================================================================== */}
-            <CarouselItem className="flex h-screen w-full bg-purple-600 p-0">
+            <CarouselItem className="flex h-screen w-full p-0">
               {/* レスポンシブスマホ(portrait, landscape)---------------------------------------*/}
               <section id="gallery_contents" className="relative flex w-full justify-center">
                 <div className="absolute top-[12%] flex h-[60%] w-full flex-col items-center landscape:top-[5%] landscape:h-[70%]">
-                  <h1 className="mx-auto flex cursor-default text-5xl font-bold text-white">
-                    gallery1
-                  </h1>
+                  <h1 className="mx-auto flex cursor-default text-5xl font-bold">gallery1</h1>
                   <div className="mt-3 flex h-full w-[90%] flex-wrap justify-between gap-3 overflow-y-scroll pt-2">
                     {Array(10)
                       .fill(0)
@@ -67,7 +65,7 @@ const Section6 = (props: Props) => {
                 <div className="absolute top-[80%] flex w-full justify-start">
                   <CarouselPrevious id="CarouselPrevious_gallery" />
                   <label htmlFor="CarouselPrevious_gallery">
-                    <span className="ml-3 flex text-4xl font-semibold text-white underline hover:cursor-pointer hover:opacity-75">
+                    <span className="ml-3 flex text-4xl font-semibold underline hover:cursor-pointer hover:opacity-75">
                       ⇐back
                     </span>
                   </label>

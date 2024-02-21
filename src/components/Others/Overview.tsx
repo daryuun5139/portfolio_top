@@ -8,13 +8,18 @@ type Props = {
   ns: string;
 };
 
-const Overview = async ({ lng, ns }: Props) => {
-  const { t } = await useTranslation(lng.toString(), ns);
+const Overview = ({ lng, ns }: Props) => {
+  const { t } = useTranslation(lng.toString(), ns);
 
   return (
-    <>
-      <Trans t={t}>{"text1"}</Trans>
-    </>
+    <div className="flex flex-col">
+      <div>
+        <Trans t={t}>{"text1"}</Trans>
+      </div>
+      <div className="text-sm">
+        <Trans t={t}>{"techUsed"}</Trans>
+      </div>
+    </div>
   );
 };
 

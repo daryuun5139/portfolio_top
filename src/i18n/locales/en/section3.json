@@ -1,3 +1,4 @@
 {
-  "text1": "This is a simple blog created with Next.js. <br>It uses microCMS as the backend (headless CMS). <br>I wanted to create a website from scratch using Next.js, so I made this."
+  "text1": "This is a simple blog created with Next.js. <br>It uses microCMS as the backend (headless CMS). <br>I wanted to create a website from scratch using Next.js, so I made this.",
+  "techUsed": "techUsed: Next.js, microCMS, i18next, next-themes, highlight.js, tailwind, typescript, etc"
 }

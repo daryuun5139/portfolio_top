@@ -9,8 +9,6 @@ const Dynamic_NavBar_Hidden = dynamic(() => import("./NavBar_Hidden"), {
 const Dynamic_NavBar_Normal = dynamic(() => import("./NavBar_Normal"), {
   ssr: false,
 });
-//Warning: Prop id did not match. Server:
-//https://qiita.com/dosukoi_man/items/bab4aa4b8eceb8aab1a3
 
 type Props = {};
 
