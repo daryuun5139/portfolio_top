@@ -1,5 +1,5 @@
 import Image from "next/image";
-import techBlogImage from "../../../public/site_thumbnail/tech-blog04.png";
+import techBlogImage from "../../../public/site_thumbnail/tech-blog.png";
 import Link from "next/link";
 import Overview from "../Others/Overview";
 
@@ -154,7 +154,7 @@ const Section3 = ({ lng }: Props) => {
                 alt="tech-blog.png"
                 width="0"
                 height="0"
-                className="h-[550px] w-[400px] xl:h-[700px] xl:w-auto "
+                className="h-[550px] w-[400px] xl:h-[700px] xl:w-[500px]"
               />
             </div>
           </div>

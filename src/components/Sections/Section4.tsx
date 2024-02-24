@@ -1,5 +1,5 @@
 import Image from "next/image";
-import colorPaletteImage from "../../../public/site_thumbnail/color-palette02.png";
+import colorPaletteImage from "../../../public/site_thumbnail/color-palette.png";
 import Link from "next/link";
 import Overview from "../Others/Overview";
 

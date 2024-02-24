@@ -1,5 +1,5 @@
 import Image from "next/image";
-import enVideoAppImage from "../../../public/site_thumbnail/en-video-app.png";
+import corporateSite01Image from "../../../public/site_thumbnail/corporate-site01.png";
 import Link from "next/link";
 import Overview from "../Others/Overview";
 
@@ -27,11 +27,11 @@ const Section6 = ({ lng }: Props) => {
               </div>
               <div className="flex pt-2 xs:pt-8 sm:pt-4">
                 <Image
-                  src={enVideoAppImage}
+                  src={corporateSite01Image}
                   alt="corporate-site01.png"
                   width="0"
                   height="0"
-                  className=" w-[250px]  xs:h-[400px] xs:w-[300px] sm:h-[500px] sm:w-[350px]"
+                  className=" w-[300px]  xs:h-[250px] xs:w-[350px] sm:h-[250px] sm:w-[350px]"
                 />
               </div>
             </div>
@@ -76,11 +76,11 @@ const Section6 = ({ lng }: Props) => {
               {/* 画像部分-------------------------- */}
               <div className="flex w-[35%]">
                 <Image
-                  src={enVideoAppImage}
+                  src={corporateSite01Image}
                   alt="corporate-site01.png"
                   width="0"
                   height="0"
-                  className="h-[300px] w-[300px] sm:h-[350px]"
+                  className="h-[250px] w-[300px] sm:h-[250px]"
                 />
               </div>
             </div>
@@ -115,11 +115,11 @@ const Section6 = ({ lng }: Props) => {
               {/* mdサイズ以上の下右画面--------------------------- */}
               <div className="fle-col mx-auto md:pt-0">
                 <Image
-                  src={enVideoAppImage}
+                  src={corporateSite01Image}
                   alt="corporate-site01.png"
                   width="0"
                   height="0"
-                  className="h-[450px] w-[300px] min-w-[300px]"
+                  className="h-[250px] w-[300px] min-w-[300px]"
                 />
               </div>
             </div>
@@ -153,11 +153,11 @@ const Section6 = ({ lng }: Props) => {
             {/* lgサイズ以上の画面右半分----------------------------- */}
             <div className="hidden w-[40%] pt-4 lg:flex">
               <Image
-                src={enVideoAppImage}
+                src={corporateSite01Image}
                 alt="corporate-site01.png"
                 width="0"
                 height="0"
-                className="h-[550px] w-[400px] xl:h-[700px] xl:w-[500px] "
+                className="h-[300px] w-[400px] xl:h-[450px] xl:w-[500px] "
               />
             </div>
           </div>
