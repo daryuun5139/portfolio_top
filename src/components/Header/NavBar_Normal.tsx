@@ -58,79 +58,82 @@ const NavBar_Normal = () => {
               </span>
             </NavigationMenuTrigger>
             {/* Portfolioサブタグ----------------------------------------------------------- */}
-            {lng === "ja" ? (
-              <NavigationMenuContent className="ml-12 bg-black/70 px-4 py-2">
-                <ul className="flex w-[130px] flex-col text-center">
-                  <li className=" py-1 ">
-                    <NavigationMenuLink
-                      href="#portfolio1"
-                      className="cursor-pointer text-white duration-500 hover:underline"
-                    >
-                      <span>ポートフォリオ1</span>
-                    </NavigationMenuLink>
-                  </li>
-                  <li className="py-1">
-                    <NavigationMenuLink
-                      href="#portfolio2"
-                      className="cursor-pointer  text-white duration-500 hover:underline"
-                    >
-                      <span>ポートフォリオ2</span>
-                    </NavigationMenuLink>
-                  </li>
-                  <li className="py-1">
-                    <NavigationMenuLink
-                      href="#portfolio3"
-                      className="cursor-pointer text-white duration-500 hover:underline"
-                    >
-                      <span>ポートフォリオ3</span>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            ) : (
-              <NavigationMenuContent className="bg-black/70 px-4 py-2">
-                <ul className="flex flex-col text-center">
-                  <li className=" py-1 ">
-                    <NavigationMenuLink
-                      href="#portfolio1"
-                      className="cursor-pointer text-white duration-500 hover:underline"
-                    >
-                      {lng === "ja" ? <span>ポートフォリオ1</span> : <span>Portfolio1</span>}
-                    </NavigationMenuLink>
-                  </li>
-                  <li className="py-1">
-                    <NavigationMenuLink
-                      href="#portfolio2"
-                      className="cursor-pointer  text-white duration-500 hover:underline"
-                    >
-                      {lng === "ja" ? <span>ポートフォリオ2</span> : <span>Portfolio2</span>}
-                    </NavigationMenuLink>
-                  </li>
-                  <li className="py-1">
-                    <NavigationMenuLink
-                      href="#portfolio3"
-                      className="cursor-pointer text-white duration-500 hover:underline"
-                    >
-                      {lng === "ja" ? <span>ポートフォリオ3</span> : <span>Portfolio3</span>}
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            )}
-          </NavigationMenuItem>
-          {/* galleryタグ----------------------------------------------------------- */}
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              href="#gallery"
-              className="cursor-pointer font-semibold text-white duration-500 hover:underline"
-            >
-              {lng === "ja" ? (
-                <span className="text-xl">ギャラリー</span>
-              ) : (
-                <span className="text-2xl">gallery</span>
-              )}
-            </NavigationMenuLink>
-            <NavigationMenuContent></NavigationMenuContent>
+            <NavigationMenuContent className="ml-12 bg-black/70 px-4 py-2">
+              <ul className="flex w-[330px] flex-col text-start">
+                <li className="py-1">
+                  <NavigationMenuLink
+                    href="#portfolio1"
+                    className="cursor-pointer text-white duration-500 hover:underline"
+                  >
+                    {lng === "ja" ? (
+                      <span>ポートフォリオ1 / Simple blog</span>
+                    ) : (
+                      <span className="text-lg">Portfolio1 / Simple blog</span>
+                    )}
+                  </NavigationMenuLink>
+                </li>
+                <li className="py-1">
+                  <NavigationMenuLink
+                    href="#portfolio2"
+                    className="cursor-pointer  text-white duration-500 hover:underline"
+                  >
+                    {lng === "ja" ? (
+                      <span>ポートフォリオ2 / Learn English with AI</span>
+                    ) : (
+                      <span className="text-lg">Portfolio2 / Learn English with AI</span>
+                    )}
+                  </NavigationMenuLink>
+                </li>
+                <li className="py-1">
+                  <NavigationMenuLink
+                    href="#portfolio3"
+                    className="cursor-pointer text-white duration-500 hover:underline"
+                  >
+                    {lng === "ja" ? (
+                      <span>ポートフォリオ3 / Learn English with Video</span>
+                    ) : (
+                      <span className="text-lg">Portfolio3 / Learn English with Video</span>
+                    )}
+                  </NavigationMenuLink>
+                </li>
+                <li className="py-1">
+                  <NavigationMenuLink
+                    href="#portfolio4"
+                    className="cursor-pointer text-white duration-500 hover:underline"
+                  >
+                    {lng === "ja" ? (
+                      <span>ポートフォリオ4</span>
+                    ) : (
+                      <span className="text-lg">Portfolio4</span>
+                    )}
+                  </NavigationMenuLink>
+                </li>
+                <li className="py-1">
+                  <NavigationMenuLink
+                    href="#portfolio5"
+                    className="cursor-pointer text-white duration-500 hover:underline"
+                  >
+                    {lng === "ja" ? (
+                      <span>ポートフォリオ5 / Color palette</span>
+                    ) : (
+                      <span className="text-lg">Portfolio5 / Color palette</span>
+                    )}
+                  </NavigationMenuLink>
+                </li>
+                <li className="py-1">
+                  <NavigationMenuLink
+                    href="#portfolio6"
+                    className="cursor-pointer text-white duration-500 hover:underline"
+                  >
+                    {lng === "ja" ? (
+                      <span>ポートフォリオ6 / Corporate site01</span>
+                    ) : (
+                      <span className="text-lg">Portfolio6 / Corporate site01</span>
+                    )}
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>

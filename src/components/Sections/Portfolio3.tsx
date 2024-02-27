@@ -7,8 +7,8 @@ type Props = {
   lng: string;
 };
 
-const Section5 = ({ lng }: Props) => {
-  const sectionName = "section5";
+const Portfolio3 = ({ lng }: Props) => {
+  const sectionName = "portfolio3";
 
   return (
     <>
@@ -164,4 +164,4 @@ const Section5 = ({ lng }: Props) => {
   );
 };
 
-export default Section5;
+export default Portfolio3;

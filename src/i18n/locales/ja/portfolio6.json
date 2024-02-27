@@ -1,0 +1,4 @@
+{
+  "text1": "自分が英語を学習するために作成したサイトです。<br>Next.jsで作成しています。<br>字幕が動画の再生に合わせて切り替わったり、字幕部分にちょっとしたメモができるようになっています。",
+  "techUsed": "使用技術: Next.js, microCMS, react-player, recoil, tailwind, shadcn, tiptap, typescript, etc"
+}

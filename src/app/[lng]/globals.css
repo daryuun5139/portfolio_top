@@ -72,45 +72,57 @@ h1 {
 
 /* Background Gradient------------------------------------------ */
 #section1 {
-  background: linear-gradient(234deg, #fa709a, #fee140);
+  background: linear-gradient(234deg, #fa709a, #fee140, #fbb03b);
   background-size: 300% 300%;
   animation: GradientBackground 8s ease 1s infinite;
 }
 
 #about_inner {
-  background: linear-gradient(234deg, #a8edea, #fed6e3);
+  background: linear-gradient(234deg, #a890fe, #ea8d8d, #6fd6ff);
   background-size: 300% 300%;
   animation: GradientBackground 8s ease 1s infinite;
+}
+
+#portfolio1 {
+  background: linear-gradient(234deg, #bff098, #6fd6ff, #fe9090);
+  background-size: 300% 300%;
+  animation: GradientBackground 8s ease 1s infinite;
+}
+
+#portfolio2 {
+  background: linear-gradient(234deg, #fbb03b, #93a5cf, #bff098);
+  background-size: 300% 300%;
+  animation: GradientBackground 8s ease 1s infinite;
+}
+
+#portfolio3 {
+  background: linear-gradient(234deg, #ff61d2, #b5fffc, #fee140);
+  background-size: 300% 300%;
+  animation: GradientBackground 8s ease 1s infinite;
+}
+
+#portfolio4 {
+  background: linear-gradient(234deg, #ff61d2, #b5fffc, #fee140);
+  background-size: 400% 400%;
+  animation: GradientBackground 13s ease infinite;
+}
+
+#portfolio5 {
+  background: linear-gradient(234deg, #c33764, #93a5cf, #fee140);
+  background-size: 400% 400%;
+  animation: GradientBackground 13s ease infinite;
+}
+
+#portfolio6 {
+  background: linear-gradient(234deg, #1eae98, #ff61d2, #fee140);
+  background-size: 400% 400%;
+  animation: GradientBackground 13s ease infinite;
 }
 
 #profile {
   background: linear-gradient(234deg, #ddd6f3, #faaca8);
   background-size: 300% 300%;
   animation: GradientBackground 8s ease 1s infinite;
-}
-
-#portfolio1 {
-  background: linear-gradient(234deg, #5ee7df, #b490ca);
-  background-size: 300% 300%;
-  animation: GradientBackground 8s ease 1s infinite;
-}
-
-#portfolio2 {
-  background: linear-gradient(234deg, #fddb92, #d1fdff);
-  background-size: 300% 300%;
-  animation: GradientBackground 8s ease 1s infinite;
-}
-
-#portfolio3 {
-  background: linear-gradient(234deg, #e0c3fc, #8ec5fc);
-  background-size: 300% 300%;
-  animation: GradientBackground 8s ease 1s infinite;
-}
-
-#portfolio4 {
-  background: linear-gradient(234deg, #ffdee9, #b5fffc);
-  background-size: 400% 400%;
-  animation: GradientBackground 13s ease infinite;
 }
 
 @keyframes GradientBackground {
