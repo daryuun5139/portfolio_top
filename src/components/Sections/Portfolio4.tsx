@@ -15,13 +15,13 @@ const Portfolio4 = ({ lng }: Props) => {
       <section id="portfolio4" className="relative w-full snap-start">
         {/* レスポンシブ2xs〜md(portrait)=================================================================== */}
         <div className="absolute top-[50px] flex h-[calc(100%-50px)] w-full 2xs:top-[60px] 2xs:h-[calc(100%-60px)] xs:top-[65px] xs:h-[calc(100%-65px)] sm:top-[80px] sm:h-[calc(100%-80px)] md:hidden landscape:hidden">
-          <div className="mx-auto flex h-full flex-col justify-between">
+          <div className="mx-auto flex h-[90%] flex-col justify-between">
             {/* タイトル部分----------------------*/}
             <h1 className="flex pb-2 text-3xl 2xs:text-5xl xs:text-6xl sm:text-7xl">
               <span className="mx-auto flex cursor-default font-bold ">portfolio4</span>
             </h1>
             {/* 概要&画像部分-------------------- */}
-            <div className="mx-auto flex h-[70%] flex-col items-center overflow-y-scroll pt-2">
+            <div className="mx-auto flex flex-col items-center overflow-y-scroll pt-2">
               <div className="mx-auto flex cursor-default text-center text-sm leading-6 tracking-[3px] xs:leading-8 sm:text-base">
                 <Overview lng={lng} ns={sectionName} />
               </div>
@@ -36,7 +36,7 @@ const Portfolio4 = ({ lng }: Props) => {
               </div>
             </div>
             {/* リンク部分------------------------ */}
-            <div className="mb-5 flex h-[20%] w-full justify-evenly pt-3 2xs:pt-5 xs:pt-8 sm:pt-5">
+            <div className="mb-5 flex w-full justify-evenly pt-3 2xs:pt-5 xs:pt-8 sm:pt-5">
               <Link href="https://en-video-app.vercel.app/">
                 <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
                   visit site

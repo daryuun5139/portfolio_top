@@ -16,7 +16,7 @@ const Section2 = ({ lng }: Props) => {
             <h1 className="flex pb-2 text-3xl 2xs:text-5xl xs:text-6xl sm:text-7xl">
               <span className="mx-auto flex cursor-default font-bold">about me</span>
             </h1>
-            <div className="flex h-[85%] w-[90%] cursor-default flex-col overflow-y-scroll pt-8 text-sm sm:text-base">
+            <div className="flex h-[85%] w-[90%] cursor-default flex-col overflow-x-hidden overflow-y-scroll pt-8 text-sm sm:text-base">
               <ProfileContent lng={lng} ns={sectionName} />
             </div>
           </div>
