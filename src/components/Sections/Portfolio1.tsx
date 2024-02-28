@@ -134,7 +134,7 @@ const Portfolio1 = ({ lng }: Props) => {
                 <span className="mx-auto flex cursor-default font-bold lg:m-0">portfolio1</span>
               </h1>
               <div className="flex flex-col lg:pt-12 xl:pt-16">
-                <div className="tracking-[3px]lg:text-start mx-auto flex cursor-default xl:ml-[70px]">
+                <div className="mx-auto flex cursor-default tracking-[3px] lg:text-start xl:ml-[70px]">
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full justify-evenly lg:pt-5 xl:pt-10">
