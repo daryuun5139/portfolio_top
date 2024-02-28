@@ -72,7 +72,7 @@ h1 {
 
 /* Background Gradient------------------------------------------ */
 #section1 {
-  background: linear-gradient(234deg, #fa709a, #fee140, #fbb03b);
+  background: linear-gradient(234deg, #ea8d8d, #c33764, #fee140);
   background-size: 300% 300%;
   animation: GradientBackground 8s ease 1s infinite;
 }
@@ -96,7 +96,7 @@ h1 {
 }
 
 #portfolio3 {
-  background: linear-gradient(234deg, #ff61d2, #b5fffc, #fee140);
+  background: linear-gradient(234deg, #fee140, #b5fffc, #ff61d2);
   background-size: 300% 300%;
   animation: GradientBackground 8s ease 1s infinite;
 }
@@ -120,7 +120,7 @@ h1 {
 }
 
 #profile {
-  background: linear-gradient(234deg, #ddd6f3, #faaca8);
+  background: linear-gradient(234deg, #1eae98, #faaca8, #fee140);
   background-size: 300% 300%;
   animation: GradientBackground 8s ease 1s infinite;
 }
@@ -137,4 +137,9 @@ h1 {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* Section2 profileボックス */
+.profileBox {
+  background-color: rgba(255, 255, 255, 0.2);
 }

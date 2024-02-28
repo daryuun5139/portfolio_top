@@ -13,10 +13,16 @@ const Overview = ({ lng, ns }: Props) => {
 
   return (
     <div className="flex flex-col">
-      <div>
+      <div className="pb-2 leading-7 text-[#003566]">
         <Trans t={t}>{"text1"}</Trans>
       </div>
-      <div className="text-sm">
+      <div className="text-sm text-[#003566]">
+        <Trans t={t}>{"date"}</Trans>
+      </div>
+      <div className="text-sm text-[#003566]">
+        <Trans t={t}>{"responsive"}</Trans>
+      </div>
+      <div className="text-sm text-[#003566]">
         <Trans t={t}>{"techUsed"}</Trans>
       </div>
     </div>

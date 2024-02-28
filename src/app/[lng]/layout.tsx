@@ -1,12 +1,19 @@
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, DotGothic16 } from "next/font/google";
 import { dir } from "i18next";
 import { languages } from "../../i18n/setting";
 import { Providers } from "@/components/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const dotGothic = DotGothic16({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--profile-font",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -35,7 +42,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="data:," sizes="any" />
       </head>
-      <body className={cn(inter.className)}>
+      <body className={`${cn(inter.className)} ${cn(dotGothic.variable)}`}>
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -26,6 +26,9 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      profile: "var(--profile-font)",
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",

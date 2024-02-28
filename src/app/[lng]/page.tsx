@@ -6,6 +6,7 @@ import Portfolio2 from "@/components/Sections/Portfolio2";
 import Portfolio3 from "@/components/Sections/Portfolio3";
 import Portfolio5 from "@/components/Sections/Portfolio5";
 import Portfolio6 from "@/components/Sections/Portfolio6";
+import Portfolio4 from "@/components/Sections/Portfolio4";
 
 type ParamType = {
   params: { lng: string };
@@ -26,6 +27,8 @@ export default function Home({ params: { lng } }: ParamType) {
         <Portfolio2 lng={lng} />
         {/* portfolio3 learn English with Video----------------------------------------------------------------- */}
         <Portfolio3 lng={lng} />
+        {/* portfolio4 spot mapping----------------------------------------------------------------- */}
+        {/* <Portfolio4 lng={lng} /> */}
         {/* portfolio5 color palette---------------------------------------------------------------------- */}
         <Portfolio5 lng={lng} />
         {/* portfolio6 corporate site01---------------------------------------------------------------------- */}

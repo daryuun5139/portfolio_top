@@ -1,17 +1,13 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import Link from "next/link";
+import ProfileContent from "../Others/ProfileContent";
 
 type Props = {
   lng: string;
 };
 
 const Section2 = ({ lng }: Props) => {
+  const sectionName = "profile";
+
   return (
     <>
       <section id="about" className="flex w-full snap-start items-center justify-center">
@@ -39,18 +35,27 @@ const Section2 = ({ lng }: Props) => {
             id="about_inner"
             className="relative hidden h-full w-full md:flex big-phone:hidden"
           >
-            <h1 className="absolute left-[150px] top-[130px] flex flex-col items-end">
-              <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px]">
-                about
-              </span>
-              <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px]">me</span>
-            </h1>
-            <div className="absolute top-[80%] flex w-full justify-end">
-              <Link href={`/${lng}/profile`}>
-                <span className="mr-20 flex text-7xl font-semibold text-[#003566] underline hover:cursor-pointer hover:opacity-75">
-                  more
+            <div className="absolute left-[150px] top-[130px] flex">
+              <h1 className="flex flex-col items-end">
+                <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px]">
+                  about
                 </span>
-              </Link>
+                <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px]">
+                  me
+                </span>
+              </h1>
+              <div className="profileBox ml-20 mt-10 flex h-[500px] w-[700px] flex-col overflow-y-scroll rounded-xl border-4 border-[#003566] px-10 py-8">
+                <div className="flex h-[80%]">
+                  <ProfileContent lng={lng} ns={sectionName} />
+                </div>
+                {/* <div className="flex">
+                  <Link href={`/${lng}/profile`}>
+                    <span className="text-xl font-semibold text-[#003566] underline hover:cursor-pointer hover:opacity-75">
+                      read more
+                    </span>
+                  </Link>
+                </div> */}
+              </div>
             </div>
           </section>
         </div>

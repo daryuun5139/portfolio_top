@@ -1,4 +1,6 @@
 {
-  "text1": "This is a website created with Next.js that recolors SVG data created in programs like Illustrator with various color schemes.<br> I created it to quickly check different color versions of SVG data created in Illustrator.",
+  "text1": "This is a website I created when I was addicted to creating patterns in Illustrator.<br>When you upload pattern data, it generates various color schemes of patterns for you. <br>I struggled quite a bit with handling SVG data.",
+  "date": "Date of creation: January 2024",
+  "responsive": "Responsive: Not supported",
   "techUsed": "techUsed: Next.js, recoil, tailwind, shadcn, typescript, etc"
 }
