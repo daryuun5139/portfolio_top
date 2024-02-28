@@ -14,14 +14,14 @@ const Portfolio5 = ({ lng }: Props) => {
     <>
       <section id="portfolio5" className="relative w-full snap-start">
         {/* レスポンシブ2xs〜md(portrait)------------------------------------------------------------------------- */}
-        <div className="absolute top-[50px] flex h-full w-full 2xs:top-[60px] xs:top-[65px] sm:top-[80px] md:hidden landscape:hidden">
+        <div className="absolute top-[50px] flex h-[calc(100%-50px)] w-full 2xs:top-[60px] 2xs:h-[calc(100%-60px)] xs:top-[65px] xs:h-[calc(100%-65px)] sm:top-[80px] sm:h-[calc(100%-80px)] md:hidden landscape:hidden">
           <div className="mx-auto flex h-full flex-col justify-between">
             {/* タイトル部分----------------------*/}
             <h1 className="flex pb-2 text-3xl 2xs:text-5xl xs:text-6xl sm:text-7xl">
               <span className="mx-auto flex cursor-default font-bold">portfolio5</span>
             </h1>
             {/* 概要&画像部分-------------------- */}
-            <div className="mx-auto flex h-[70%] flex-col items-center overflow-y-scroll pt-2">
+            <div className="mx-auto flex h-[90%] flex-col items-center overflow-y-scroll pt-2">
               <div className="mx-auto flex cursor-default text-center text-sm leading-6 tracking-[3px] xs:leading-8 sm:text-base">
                 <Overview lng={lng} ns={sectionName} />
               </div>
@@ -52,7 +52,7 @@ const Portfolio5 = ({ lng }: Props) => {
         </div>
         {/* レスポンシブ2xs〜md(portrait)終了----------------------------------------------------------------------- */}
         {/* レスポンシブ2xs〜md(landscape)------------------------------------------------------------------------- */}
-        <div className="absolute top-3 flex h-full w-full md:hidden big-phone:flex portrait:hidden">
+        <div className="absolute top-3 flex h-[calc(100%-12px)] w-full md:hidden big-phone:flex portrait:hidden">
           <div className="mx-auto flex h-full flex-col justify-between">
             {/* タイトル部分------------------------*/}
             <h1 className="flex text-4xl md:pt-3 md:text-5xl">
@@ -88,7 +88,7 @@ const Portfolio5 = ({ lng }: Props) => {
         </div>
         {/* レスポンシブ2xs〜md(landscape)終了------------------------------------------------------------------------- */}
         {/* mdサイズ以上の画面===================================================================================== */}
-        <div className="absolute top-[150px] hidden h-full w-full flex-col justify-between md:flex lg:hidden big-phone:hidden">
+        <div className="absolute top-[150px] hidden h-[calc(100%-150px)] w-full flex-col justify-between md:flex lg:hidden big-phone:hidden">
           <div className="mx-auto flex w-[90%] flex-col">
             {/* mdサイズ以上の上画面------------------------------ */}
             <h1 className="flex md:text-8xl ">
@@ -126,7 +126,7 @@ const Portfolio5 = ({ lng }: Props) => {
           </div>
         </div>
         {/* lgサイズ以上の画面===================================================================================== */}
-        <div className="absolute top-[150px] hidden h-full w-full justify-center lg:flex lg:gap-5 xl:gap-8">
+        <div className="absolute top-[150px] hidden h-[calc(100%-150px)] w-full justify-center lg:flex lg:gap-5 xl:gap-8">
           <div className="mx-auto flex w-[85%] justify-between 2xl:w-[70%]">
             {/* lgサイズ以上の画面左半分------------------------------- */}
             <div className="flex w-[60%] flex-col">
