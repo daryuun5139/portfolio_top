@@ -12,7 +12,7 @@ const ProfileContent = ({ lng, ns }: Props) => {
   const { t } = useTranslation(lng.toString(), ns);
 
   return (
-    <div className="flex flex-col">
+    <>
       <div className="pb-2 font-profile font-semibold leading-7 text-[#003566]">
         <Trans t={t}>{"text1"}</Trans>
       </div>
@@ -22,7 +22,7 @@ const ProfileContent = ({ lng, ns }: Props) => {
       <div className="pb-2 font-profile font-semibold leading-7 text-[#003566]">
         <Trans t={t}>{"text3"}</Trans>
       </div>
-    </div>
+    </>
   );
 };
 
