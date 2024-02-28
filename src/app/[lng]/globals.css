@@ -61,7 +61,8 @@ body {
   background-color: #ffffff;
 }
 
-section {
+section,
+.section-wrapper {
   /* https://devsakaso.com/javascript-100vh-problem-on-mobile-screens/# */
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);

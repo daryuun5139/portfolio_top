@@ -16,7 +16,7 @@ export default function Home({ params: { lng } }: ParamType) {
   return (
     <div className="relative w-full">
       <Header />
-      <div className="h-screen w-full snap-y snap-mandatory overflow-hidden overflow-y-scroll">
+      <div className="section-wrapper w-full snap-y snap-mandatory overflow-hidden overflow-y-scroll">
         {/* セクション１ Title---------------------------------------------------------------------- */}
         <Section1 />
         {/* セクション２ About---------------------------------------------------------------------- */}
