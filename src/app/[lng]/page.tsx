@@ -28,7 +28,7 @@ export default function Home({ params: { lng } }: ParamType) {
         {/* portfolio3 learn English with Video----------------------------------------------------------------- */}
         <Portfolio3 lng={lng} />
         {/* portfolio4 spot mapping----------------------------------------------------------------- */}
-        {/* <Portfolio4 lng={lng} /> */}
+        <Portfolio4 lng={lng} />
         {/* portfolio5 color palette---------------------------------------------------------------------- */}
         <Portfolio5 lng={lng} />
         {/* portfolio6 corporate site01---------------------------------------------------------------------- */}
