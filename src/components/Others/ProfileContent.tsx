@@ -13,13 +13,13 @@ const ProfileContent = ({ lng, ns }: Props) => {
 
   return (
     <>
-      <div className="pb-2 font-profile font-semibold leading-7 text-[#003566]">
+      <div className="pb-4 font-profile font-semibold leading-7 text-[#003566]">
         <Trans t={t}>{"text1"}</Trans>
       </div>
-      <div className="pb-2 font-profile font-semibold leading-7 text-[#003566]">
+      <div className="pb-4 font-profile font-semibold leading-7 text-[#003566]">
         <Trans t={t}>{"text2"}</Trans>
       </div>
-      <div className="pb-2 font-profile font-semibold leading-7 text-[#003566]">
+      <div className="font-profile font-semibold leading-7 text-[#003566]">
         <Trans t={t}>{"text3"}</Trans>
       </div>
     </>

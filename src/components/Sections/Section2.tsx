@@ -30,7 +30,7 @@ const Section2 = ({ lng }: Props) => {
               </span>
               <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px]">me</span>
             </h1>
-            <div className="profileBox ml-20 mt-10 flex h-[500px] w-[700px] flex-col overflow-y-scroll rounded-xl border-4 border-[#003566] px-10 py-8">
+            <div className="profileBox ml-20 mt-10 flex h-[500px] w-[700px] flex-col overflow-x-hidden overflow-y-scroll rounded-xl border-4 border-[#003566] px-10 py-8">
               <ProfileContent lng={lng} ns={sectionName} />
             </div>
           </div>
