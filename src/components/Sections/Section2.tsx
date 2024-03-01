@@ -11,7 +11,7 @@ const Section2 = ({ lng }: Props) => {
     <>
       <section id="about" className="relative w-full snap-start">
         {/* レスポンシブスマホ(portrait, landscape)----------------------------*/}
-        <div className="absolute top-[50px] flex h-[calc(100%-50px)] w-full 2xs:top-[60px] 2xs:h-[calc(100%-60px)] xs:top-[65px] xs:h-[calc(100%-65px)] sm:top-[80px] sm:h-[calc(100%-80px)] md:hidden landscape:hidden">
+        <div className="absolute top-[50px] flex h-[calc(100%-50px)] w-full 2xs:top-[60px] 2xs:h-[calc(100%-60px)] xs:top-[65px] xs:h-[calc(100%-65px)] sm:top-[80px] sm:h-[calc(100%-80px)] md:hidden">
           <div className="mx-auto flex h-full w-full flex-col items-center">
             <h1 className="flex pb-2 text-3xl 2xs:text-5xl xs:text-6xl sm:text-7xl">
               <span className="mx-auto flex cursor-default font-bold">about me</span>

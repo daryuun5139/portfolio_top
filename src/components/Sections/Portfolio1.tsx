@@ -1,6 +1,5 @@
 import Image from "next/image";
 import techBlogImage from "../../../public/site_thumbnail/tech-blog.png";
-import Link from "next/link";
 import Overview from "../Others/Overview";
 
 type Props = {
@@ -37,16 +36,16 @@ const Portfolio1 = ({ lng }: Props) => {
             </div>
             {/* リンク部分------------------------ */}
             <div className="mb-5 flex w-full justify-evenly pt-3 2xs:pt-5 xs:pt-8 sm:pt-5">
-              <Link href="https://tech-blog-pink.vercel.app/ja">
+              <a href="https://tech-blog-pink.vercel.app/ja">
                 <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
                   visit site
                 </span>
-              </Link>
-              <Link href="https://github.com/daryuun5139/tech-blog">
+              </a>
+              <a href="https://github.com/daryuun5139/tech-blog">
                 <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
                   github
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -65,12 +64,12 @@ const Portfolio1 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full justify-evenly pt-1 md:pt-5">
-                  <Link href="https://tech-blog-pink.vercel.app/ja" className="flex">
+                  <a href="https://tech-blog-pink.vercel.app/ja" className="flex">
                     <span className="text-2xl font-semibold underline md:text-3xl">visit site</span>
-                  </Link>
-                  <Link href="https://github.com/daryuun5139/tech-blog" className="flex">
+                  </a>
+                  <a href="https://github.com/daryuun5139/tech-blog" className="flex">
                     <span className="text-2xl font-semibold underline md:text-3xl">github</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
               {/* 画像部分-------------------------- */}
@@ -101,15 +100,12 @@ const Portfolio1 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full md:pt-5">
-                  <Link href="https://tech-blog-pink.vercel.app/ja" className="mx-auto md:mr-3 ">
+                  <a href="https://tech-blog-pink.vercel.app/ja" className="mx-auto md:mr-3 ">
                     <span className="text-3xl font-semibold underline">visit site⇛</span>
-                  </Link>
-                  <Link
-                    href="https://github.com/daryuun5139/tech-blog"
-                    className="mx-auto md:mr-3 "
-                  >
+                  </a>
+                  <a href="https://github.com/daryuun5139/tech-blog" className="mx-auto md:mr-3 ">
                     <span className="text-3xl font-semibold underline">github⇛</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
               {/* mdサイズ以上の下右画面--------------------------- */}
@@ -138,12 +134,12 @@ const Portfolio1 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full justify-evenly lg:pt-5 xl:pt-10">
-                  <Link href="https://tech-blog-pink.vercel.app/ja" className="flex lg:mr-5">
+                  <a href="https://tech-blog-pink.vercel.app/ja" className="flex lg:mr-5">
                     <span className="text-3xl font-semibold underline">visit site⇛</span>
-                  </Link>
-                  <Link href="https://github.com/daryuun5139/tech-blog" className="flex lg:mr-5">
+                  </a>
+                  <a href="https://github.com/daryuun5139/tech-blog" className="flex lg:mr-5">
                     <span className="text-3xl font-semibold underline">github⇛</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

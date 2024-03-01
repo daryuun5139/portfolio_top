@@ -4,8 +4,11 @@ import type { Metadata } from "next";
 import { Inter, DotGothic16 } from "next/font/google";
 import { dir } from "i18next";
 import { languages } from "../../i18n/setting";
-import { Providers } from "@/components/Providers";
-
+// import dynamic from "next/dynamic";
+// const Providers = dynamic(() => import("@/components/Providers"), {
+//   ssr: false,
+// });
+import Providers from "@/components/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 const dotGothic = DotGothic16({
