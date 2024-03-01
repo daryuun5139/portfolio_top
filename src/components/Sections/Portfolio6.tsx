@@ -37,12 +37,12 @@ const Portfolio6 = ({ lng }: Props) => {
             </div>
             {/* リンク部分------------------------ */}
             <div className="mb-5 flex w-full justify-evenly pt-3 2xs:pt-5 xs:pt-8 sm:pt-5">
-              <Link href="https://corporate-site01.vercel.app/">
+              <Link href="https://corporate-site01-for-public.vercel.app/">
                 <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
                   visit site
                 </span>
               </Link>
-              <Link href="https://github.com/daryuun5139/corporate-site01">
+              <Link href="https://github.com/daryuun5139/corporate-site01_forPublic">
                 <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
                   github
                 </span>
@@ -65,10 +65,13 @@ const Portfolio6 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full justify-evenly pt-1 md:pt-5">
-                  <Link href="https://corporate-site01.vercel.app/" className="flex">
+                  <Link href="https://corporate-site01-for-public.vercel.app/" className="flex">
                     <span className="text-2xl font-semibold underline md:text-3xl">visit site</span>
                   </Link>
-                  <Link href="https://github.com/daryuun5139/corporate-site01" className="flex">
+                  <Link
+                    href="https://github.com/daryuun5139/corporate-site01_forPublic"
+                    className="flex"
+                  >
                     <span className="text-2xl font-semibold underline md:text-3xl">github</span>
                   </Link>
                 </div>
@@ -101,11 +104,14 @@ const Portfolio6 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full md:pt-5">
-                  <Link href="https://corporate-site01.vercel.app/" className="mx-auto md:mr-3 ">
+                  <Link
+                    href="https://corporate-site01-for-public.vercel.app/"
+                    className="mx-auto md:mr-3 "
+                  >
                     <span className="text-3xl font-semibold underline">visit site⇛</span>
                   </Link>
                   <Link
-                    href="https://github.com/daryuun5139/corporate-site01"
+                    href="https://github.com/daryuun5139/corporate-site01_forPublic"
                     className="mx-auto md:mr-3 "
                   >
                     <span className="text-3xl font-semibold underline">github⇛</span>
@@ -138,11 +144,14 @@ const Portfolio6 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full justify-evenly lg:pt-5 xl:pt-10">
-                  <Link href="https://corporate-site01.vercel.app/" className="flex lg:mr-5">
+                  <Link
+                    href="https://corporate-site01-for-public.vercel.app/"
+                    className="flex lg:mr-5"
+                  >
                     <span className="text-3xl font-semibold underline">visit site⇛</span>
                   </Link>
                   <Link
-                    href="https://github.com/daryuun5139/corporate-site01"
+                    href="https://github.com/daryuun5139/corporate-site01_forPublic"
                     className="flex lg:mr-5"
                   >
                     <span className="text-3xl font-semibold underline">github⇛</span>
