@@ -104,7 +104,7 @@ const NavBar_Normal = () => {
                     {lng === "ja" ? (
                       <span>ポートフォリオ4</span>
                     ) : (
-                      <span className="text-lg">Portfolio4</span>
+                      <span className="text-lg">Portfolio4 / spot mapping app</span>
                     )}
                   </NavigationMenuLink>
                 </li>

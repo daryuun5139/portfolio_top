@@ -82,12 +82,12 @@ const NavBar_Hidden = () => {
               {lng === "ja" ? (
                 <div className="flex flex-col">
                   <span>ポートフォリオ4</span>
-                  <span className="pl-2">no content</span>
+                  <span className="pl-2">spot mapping app</span>
                 </div>
               ) : (
                 <div className="flex flex-col">
                   <span>Portfolio4</span>
-                  <span className="pl-2">no content</span>
+                  <span className="pl-2">spot mapping app</span>
                 </div>
               )}
             </Link>
