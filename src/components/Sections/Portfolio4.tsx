@@ -1,5 +1,5 @@
 import Image from "next/image";
-import enVideoAppImage from "../../../public/site_thumbnail/en-video-app.png";
+import spotMappingAppImage from "../../../public/site_thumbnail/spot-mapping-app.png";
 import Link from "next/link";
 import Overview from "../Others/Overview";
 
@@ -26,28 +26,27 @@ const Portfolio4 = ({ lng }: Props) => {
                 <Overview lng={lng} ns={sectionName} />
               </div>
               <div className="flex pt-2 xs:pt-8 sm:pt-4">
-                <div className="w-[250px] bg-slate-200 xs:h-[400px] xs:w-[300px] sm:h-[500px] sm:w-[350px]"></div>
-                {/* <Image
-                  src={enVideoAppImage}
-                  alt="en-video-app.png"
+                <Image
+                  src={spotMappingAppImage}
+                  alt="spot-mapping-app.png"
                   width="0"
                   height="0"
-                  className=" w-[250px]  xs:h-[400px] xs:w-[300px] sm:h-[500px] sm:w-[350px]"
-                /> */}
+                  className="w-[300px]  xs:h-[250px] xs:w-[350px] sm:h-[250px] sm:w-[350px]"
+                />
               </div>
             </div>
             {/* リンク部分------------------------ */}
             <div className="mb-5 flex w-full justify-evenly pt-3 2xs:pt-5 xs:pt-8 sm:pt-5">
-              {/* <Link href=""> */}
-              <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
-                visit site
-              </span>
-              {/* </Link> */}
-              {/* <Link href=""> */}
-              <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
-                github
-              </span>
-              {/* </Link> */}
+              <Link href="https://spot-mapping-app.vercel.app/">
+                <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
+                  visit site
+                </span>
+              </Link>
+              <Link href="https://github.com/daryuun5139/spot-mapping-app">
+                <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
+                  github
+                </span>
+              </Link>
             </div>
           </div>
         </div>
@@ -60,31 +59,29 @@ const Portfolio4 = ({ lng }: Props) => {
               <span className="mx-auto flex cursor-default font-bold ">portfolio4</span>
             </h1>
             {/* 概要&Link部分-------------------- */}
-            <div className="mx-auto flex h-[90%] w-[95%] gap-3 overflow-y-scroll 3xs:overflow-hidden md:h-[75%] md:w-[85%]">
+            <div className="mx-auto flex h-[80%] w-[95%] gap-3 overflow-y-scroll 3xs:overflow-hidden md:h-[75%] md:w-[85%]">
               <div className="flex w-[60%] flex-col">
                 <div className="flex cursor-default text-sm leading-6 tracking-[3px] xs:leading-8 md:text-lg">
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full justify-evenly pt-1 md:pt-5">
-                  {/* <Link href="" className="flex"> */}
-                  <span className="text-2xl font-semibold underline md:text-3xl">visit site</span>
-                  {/* </Link> */}
-                  {/* <Link href="" className="flex"> */}
-                  <span className="text-2xl font-semibold underline md:text-3xl">github</span>
-                  {/* </Link> */}
+                  <Link href="https://spot-mapping-app.vercel.app/" className="flex">
+                    <span className="text-2xl font-semibold underline md:text-3xl">visit site</span>
+                  </Link>
+                  <Link href="https://github.com/daryuun5139/spot-mapping-app" className="flex">
+                    <span className="text-2xl font-semibold underline md:text-3xl">github</span>
+                  </Link>
                 </div>
               </div>
               {/* 画像部分-------------------------- */}
               <div className="flex w-[35%]">
-                <div className="h-[300px] w-[300px] bg-slate-200 sm:h-[350px]"></div>
-
-                {/* <Image
-                  src={enVideoAppImage}
-                  alt="en-video-app.png"
+                <Image
+                  src={spotMappingAppImage}
+                  alt="spot-mapping-app.png"
                   width="0"
                   height="0"
-                  className="h-[300px] w-[300px] sm:h-[350px]"
-                /> */}
+                  className="h-[250px] w-[300px] sm:h-[250px]"
+                />
               </div>
             </div>
           </div>
@@ -104,28 +101,26 @@ const Portfolio4 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full md:pt-5">
-                  {/* <Link href="" className="mx-auto md:mr-3 "> */}
-                  <span className="text-3xl font-semibold underline">visit site⇛</span>
-                  {/* </Link> */}
-                  {/* <Link
-                    href=""
+                  <Link href="https://spot-mapping-app.vercel.app/" className="mx-auto md:mr-3 ">
+                    <span className="text-3xl font-semibold underline">visit site⇛</span>
+                  </Link>
+                  <Link
+                    href="https://github.com/daryuun5139/spot-mapping-app"
                     className="mx-auto md:mr-3 "
-                  > */}
-                  <span className="text-3xl font-semibold underline">github⇛</span>
-                  {/* </Link> */}
+                  >
+                    <span className="text-3xl font-semibold underline">github⇛</span>
+                  </Link>
                 </div>
               </div>
               {/* mdサイズ以上の下右画面--------------------------- */}
               <div className="fle-col mx-auto md:pt-0">
-                <div className="h-[450px] w-[300px] min-w-[300px] bg-slate-200"></div>
-
-                {/* <Image
-                  src={enVideoAppImage}
-                  alt="en-video-app.png"
+                <Image
+                  src={spotMappingAppImage}
+                  alt="spot-mapping-app.png"
                   width="0"
                   height="0"
-                  className="h-[450px] w-[300px] min-w-[300px]"
-                /> */}
+                  className="h-[250px] w-[300px] min-w-[300px]"
+                />
               </div>
             </div>
           </div>
@@ -143,25 +138,27 @@ const Portfolio4 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full justify-evenly lg:pt-5 xl:pt-10">
-                  {/* <Link href="" className="flex lg:mr-5"> */}
-                  <span className="text-3xl font-semibold underline">visit site⇛</span>
-                  {/* </Link> */}
-                  {/* <Link href="" className="flex lg:mr-5"> */}
-                  <span className="text-3xl font-semibold underline">github⇛</span>
-                  {/* </Link> */}
+                  <Link href="https://spot-mapping-app.vercel.app/" className="flex lg:mr-5">
+                    <span className="text-3xl font-semibold underline">visit site⇛</span>
+                  </Link>
+                  <Link
+                    href="https://github.com/daryuun5139/spot-mapping-app"
+                    className="flex lg:mr-5"
+                  >
+                    <span className="text-3xl font-semibold underline">github⇛</span>
+                  </Link>
                 </div>
               </div>
             </div>
             {/* lgサイズ以上の画面右半分----------------------------- */}
             <div className="hidden w-[40%] pt-4 lg:flex">
-              <div className="h-[550px] w-[400px] bg-slate-200 xl:h-[700px] xl:w-[500px]"></div>
-              {/* <Image
-                src={enVideoAppImage}
-                alt="en-video-app.png"
+              <Image
+                src={spotMappingAppImage}
+                alt="spot-mapping-app.png"
                 width="0"
                 height="0"
-                className="h-[550px] w-[400px] xl:h-[700px] xl:w-[500px] "
-              /> */}
+                className="h-[300px] w-[400px] xl:h-[450px] xl:w-[500px]"
+              />
             </div>
           </div>
         </div>

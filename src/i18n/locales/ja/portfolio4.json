@@ -1,6 +1,6 @@
 {
-  "text1": "ただいま準備中です。しばらくお待ち下さい。",
-  "date": "製作日: ",
-  "responsive": "レスポンシブ:",
-  "techUsed": "使用技術: "
+  "text1": "お気に入りのスポットを地図上に表示するサイトです。<br>Googleマップのようなサイトを作ってみたいと思い作成しました。<br>マップの表示にはコストの観点からMapboxを採用しました。",
+  "date": "製作日: 2023年12月",
+  "responsive": "レスポンシブ: 対応済み",
+  "techUsed": "使用技術: Next.js, Mapbox, microCMS, recoil, tailwind, shadcn, typescript, etc"
 }

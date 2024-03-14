@@ -1,6 +1,6 @@
 {
-  "text1": "We are currently preparing. Please wait for a little while.",
-  "date": "Date of creation: ",
-  "responsive": "Responsive: ",
-  "techUsed": "techUsed:"
+  "text1": "This is a website that displays favorite spots on a map.<br>I wanted to create a site similar to Google Maps, so I created it.<br>I chose Mapbox for displaying the map due to cost considerations.",
+  "date": "Date of creation: December 2024",
+  "responsive": "Responsive: Supported",
+  "techUsed": "techUsed: Next.js, Mapbox, microCMS, recoil, tailwind, shadcn, typescript, etc"
 }

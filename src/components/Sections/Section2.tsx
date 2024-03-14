@@ -22,7 +22,16 @@ const Section2 = ({ lng }: Props) => {
           </div>
         </div>
         {/* レスポンシブPC(md〜)------------------------------------------------ */}
-        <div className="relative hidden h-full w-full md:flex big-phone:hidden">
+        <div className="relative hidden h-full w-full justify-center md:flex xl:hidden big-phone:hidden">
+          <div className="absolute top-[100px] flex flex-col items-center">
+            <h1 className="flex cursor-default text-7xl font-bold">about me</h1>
+            <div className="profileBox mt-10 flex h-[500px] w-[700px] flex-col overflow-x-hidden overflow-y-scroll rounded-xl border-4 border-[#003566] px-10 py-8">
+              <ProfileContent lng={lng} ns={sectionName} />
+            </div>
+          </div>
+        </div>
+        {/* レスポンシブPC(xl〜)------------------------------------------------ */}
+        <div className="relative hidden h-full w-full xl:flex big-phone:hidden">
           <div className="absolute left-[150px] top-[130px] flex">
             <h1 className="flex flex-col items-end">
               <span className="m-0 flex cursor-default text-9xl font-bold leading-[150px]">

@@ -30,7 +30,7 @@ const Portfolio6 = ({ lng }: Props) => {
                   alt="corporate-site01.png"
                   width="0"
                   height="0"
-                  className=" w-[300px]  xs:h-[250px] xs:w-[350px] sm:h-[250px] sm:w-[350px]"
+                  className="w-[300px]  xs:h-[250px] xs:w-[350px] sm:h-[250px] sm:w-[350px]"
                 />
               </div>
             </div>
