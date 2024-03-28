@@ -2,5 +2,6 @@
   "text1": "This is a corporate website I created at the request of a friend.<br>I made everything from design to implementation by myself.<br>I consciously incorporated animations to prevent the site from looking cheap.<br>Since I had little experience with animations,<br>it was a great opportunity for me to delve into them extensively.",
   "date": "Date of creation: February 2024",
   "responsive": "Responsive: Supported",
-  "techUsed": "techUsed: Next.js, recoil, anime.js, tailwind, shadcn, typescript, etc"
+  "techUsed": "techUsed: Next.js, recoil, anime.js, tailwind, shadcn, typescript, etc",
+  "caution": ""
 }

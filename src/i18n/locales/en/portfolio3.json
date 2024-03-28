@@ -2,5 +2,6 @@
   "text1": "This is a website that gathers English documentary videos.<br>I created it because I wanted to try making a video site.<br>It includes features such as subtitles changing synchronously with video playback and the ability to add short notes to the subtitle section.<br>I was able to fully explore DOM and Recoil during development.",
   "date": "Date of creation: December 2023",
   "responsive": "Responsive: Not supported",
-  "techUsed": "techUsed: Next.js, microCMS, react-player, tiptap-editor, recoil, tailwind, shadcn, typescript, etc"
+  "techUsed": "techUsed: Next.js, microCMS, react-player, tiptap-editor, recoil, tailwind, shadcn, typescript, etc",
+  "caution": ""
 }

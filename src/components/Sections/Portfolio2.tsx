@@ -36,11 +36,11 @@ const Portfolio2 = ({ lng }: Props) => {
             </div>
             {/* リンク部分------------------------ */}
             <div className="mb-5 flex w-full justify-evenly pt-3 2xs:pt-5 xs:pt-8 sm:pt-5">
-              <a href="https://en-learning-with-ai.vercel.app/">
-                <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
-                  visit site
-                </span>
-              </a>
+              {/* <a href="https://en-learning-with-ai.vercel.app/"> */}
+              <span className="cursor-default text-xl font-semibold line-through xs:text-2xl sm:text-3xl">
+                visit site
+              </span>
+              {/* </a> */}
               <a href="https://github.com/daryuun5139/en-learning-withAI">
                 <span className="text-xl font-semibold underline xs:text-2xl sm:text-3xl">
                   github
@@ -64,9 +64,11 @@ const Portfolio2 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full justify-evenly pt-1 md:pt-5">
-                  <a href="https://en-learning-with-ai.vercel.app/" className="flex">
-                    <span className="text-2xl font-semibold underline md:text-3xl">visit site</span>
-                  </a>
+                  {/* <a href="https://en-learning-with-ai.vercel.app/" className="flex"> */}
+                  <span className="cursor-default text-2xl font-semibold line-through md:text-3xl">
+                    visit site
+                  </span>
+                  {/* </a> */}
                   <a href="https://github.com/daryuun5139/en-learning-withAI" className="flex">
                     <span className="text-2xl font-semibold underline md:text-3xl">github</span>
                   </a>
@@ -100,9 +102,11 @@ const Portfolio2 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full md:pt-5">
-                  <a href="https://en-learning-with-ai.vercel.app/" className="mx-auto md:mr-3 ">
-                    <span className="text-3xl font-semibold underline">visit site⇛</span>
-                  </a>
+                  {/* <a href="https://en-learning-with-ai.vercel.app/" className="mx-auto md:mr-3 "> */}
+                  <span className="cursor-default text-3xl font-semibold line-through">
+                    visit site⇛
+                  </span>
+                  {/* </a> */}
                   <a
                     href="https://github.com/daryuun5139/en-learning-withAI"
                     className="mx-auto md:mr-3 "
@@ -137,9 +141,11 @@ const Portfolio2 = ({ lng }: Props) => {
                   <Overview lng={lng} ns={sectionName} />
                 </div>
                 <div className="flex w-full justify-evenly lg:pt-5 xl:pt-10">
-                  <a href="https://en-learning-with-ai.vercel.app/" className="flex lg:mr-5">
-                    <span className="text-3xl font-semibold underline">visit site⇛</span>
-                  </a>
+                  {/* <a href="https://en-learning-with-ai.vercel.app/" className="flex lg:mr-5"> */}
+                  <span className="cursor-default text-3xl font-semibold line-through">
+                    visit site⇛
+                  </span>
+                  {/* </a> */}
                   <a
                     href="https://github.com/daryuun5139/en-learning-withAI"
                     className="flex lg:mr-5"

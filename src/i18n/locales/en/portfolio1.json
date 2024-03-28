@@ -2,5 +2,6 @@
   "text1": "This is my first work. <br>It's a simple blog created with Next.js, using microCMS as the backend (headless CMS).<br>It includes features such as language switching, dark mode, <br>and category/monthly views.<br>I wanted to create a website from scratch with Next.js.",
   "date": "Date of creation: October 2023",
   "responsive": "Responsive: Supported",
-  "techUsed": "techUsed: Next.js, microCMS, i18next, next-themes, highlight.js, tailwind, typescript, etc"
+  "techUsed": "techUsed: Next.js, microCMS, i18next, next-themes, highlight.js, tailwind, typescript, etc",
+  "caution": ""
 }

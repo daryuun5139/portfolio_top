@@ -2,5 +2,6 @@
   "text1": "illustratorで柄模様を作ることにハマっていたときに作成したサイトです。<br>柄模様のデータをアップロードすると、様々な配色の柄模様を生成してくれます。<br>SVGデータの扱いにかなり苦戦しました。",
   "date": "製作日: 2024年1月",
   "responsive": "レスポンシブ: 非対応",
-  "techUsed": "使用技術: Next.js, recoil, tailwind, shadcn, typescript, etc"
+  "techUsed": "使用技術: Next.js, recoil, tailwind, shadcn, typescript, etc",
+  "caution": ""
 }

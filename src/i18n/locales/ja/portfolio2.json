@@ -2,5 +2,6 @@
   "text1": "Youtubeの動画を参考に作成した作品です。<br>ユーザーが入力した日本語をAIに英訳してもらい、<br>その英語を基に英語表現の幅を広げることを目的としたサイトです。<br>APIとのデータのやり取り、バックエンドでの処理に触れてみたく作成しました。",
   "date": "製作日: 2023年11月",
   "responsive": "レスポンシブ: 非対応",
-  "techUsed": "使用技術: Next.js, microCMS, prisma, planetScale, zod, openAIapi, tailwind, shadcn, typescript, etc"
+  "techUsed": "使用技術: Next.js, microCMS, prisma, planetScale, zod, openAIapi, tailwind, shadcn, typescript, etc",
+  "caution": "※ planetScaleのhobbyプラン廃止のため、現在休止中です。"
 }

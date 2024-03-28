@@ -2,5 +2,6 @@
   "text1": "友人から依頼され作成したコーポレートサイトです。<br>デザインからすべてを自分で作成しました。<br>安っぽいサイトにならないようにアニメーションを意識的に取り入れています。<br>アニメーションに触れることがほとんどなかったので、<br>この機会にがっつりと触れることができてよかったです。",
   "date": "製作日: 2024年2月",
   "responsive": "レスポンシブ: 対応済み",
-  "techUsed": "使用技術: Next.js, recoil, anime.js, tailwind, shadcn, typescript, etc"
+  "techUsed": "使用技術: Next.js, recoil, anime.js, tailwind, shadcn, typescript, etc",
+  "caution": ""
 }

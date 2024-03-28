@@ -2,5 +2,6 @@
   "text1": "This is a piece of work created with reference to YouTube videos.<br>It's a website where users input Japanese text to be translated into English by an AI,<br>with the aim of expanding the range of English expressions based on that translation.<br>I wanted to create it to gain experience with data exchange with APIs and backend processing.",
   "date": "Date of creation: November 2023",
   "responsive": "Responsive: Not supported",
-  "techUsed": "techUsed: Next.js, microCMS, prisma, planetScale, zod, openAIapi, tailwind, shadcn, typescript, etc"
+  "techUsed": "techUsed: Next.js, microCMS, prisma, planetScale, zod, openAIapi, tailwind, shadcn, typescript, etc",
+  "caution": "※ Due to the discontinuation of the planetScale hobby plan, it is currently suspended."
 }

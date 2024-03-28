@@ -25,6 +25,10 @@ const Overview = ({ lng, ns }: Props) => {
       <div className="text-sm text-[#003566]">
         <Trans t={t}>{"techUsed"}</Trans>
       </div>
+
+      <div className="pt-3 font-bold text-[#003566] ">
+        <Trans t={t}>{"caution"}</Trans>
+      </div>
     </div>
   );
 };
