@@ -102,7 +102,7 @@ const NavBar_Normal = () => {
                     className="cursor-pointer text-white duration-500 hover:underline"
                   >
                     {lng === "ja" ? (
-                      <span>ポートフォリオ4</span>
+                      <span>ポートフォリオ4 / spot mapping app</span>
                     ) : (
                       <span className="text-lg">Portfolio4 / spot mapping app</span>
                     )}
